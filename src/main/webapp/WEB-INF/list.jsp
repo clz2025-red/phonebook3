@@ -29,7 +29,7 @@
 					<tr>
 					<tr>
 						<td>회사(company)</td>
-						<td>${personVo.company}</td>
+						<td>${personVO.company}</td>
 					<tr>	
 					<tr>
 						<td>
@@ -38,7 +38,7 @@
 							</a>		
 						</td>
 						<td>
-							<a href="">
+							<a href="${pageContext.request.contextPath}/pbc?action=delete&no=3">
 								[삭제]
 							</a>
 						</td>   <!-- 원래 버튼으로 해야된다 js필요 안배워서 a태그로 구현 -->
@@ -50,8 +50,7 @@
 		
 		</c:forEach>
 
-		
-		<a href="">등록폼 이동</a>
+		<a href="${pageContext.request.contextPath}/pbc?action=wform">등록폼 이동</a>
 	
 	</body>
 </html>

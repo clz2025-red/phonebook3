@@ -13,22 +13,21 @@
 		<h2>전화번호 등록폼</h2>
 		<p>전화번호를 등록하는 폼 입니다.</p>
 		
-	
-		<form action=""  method="get">
+		<form action="${pageContext.request.contextPath}/pbc"  method="get">
 			<label>이름(name)</label>
 			<input type="text" name="name" value="${requestScope.pVO.name}">
 			<br>
 		
 			<label>핸드폰(hp)</label>
-			<input type="text" name="hp" value="${requestScope.pVO.hp}">
+			<input type="text" name="hp" value="${pVO.hp}">
 			<br>
 	
 			<label>회사(company)</label>
-			<input type="text" name="company" value="${requestScope.pVO.company}">
+			<input type="text" name="company" value="${pVO.company}">
 			<br>
 			
 			<label>액션</label>
-			<input type="text" name="no" value="${requestScope.pVO.personId}">
+			<input type="text" name="no" value="${pVO.personId}">
 			<input type="text" name="action" value="modify">
 			<br>
 			

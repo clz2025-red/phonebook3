@@ -30,15 +30,16 @@
 					<tr>
 						<td>회사(company)</td>
 						<td>${personVO.company}</td>
+						
 					<tr>	
 					<tr>
 						<td>
-							<a href="">
+							<a href="${pageContext.request.contextPath}/pbc?action=mform&no=${personVO.personId}">
 								[수정폼으로 이동]
 							</a>		
 						</td>
 						<td>
-							<a href="${pageContext.request.contextPath}/pbc?action=delete&no=3">
+							<a href="${pageContext.request.contextPath}/pbc?action=delete&no=${personVO.personId}">
 								[삭제]
 							</a>
 						</td>   <!-- 원래 버튼으로 해야된다 js필요 안배워서 a태그로 구현 -->
